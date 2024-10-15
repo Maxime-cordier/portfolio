@@ -6,6 +6,26 @@
 //
 // Scripts
 // 
+document.addEventListener('DOMContentLoaded', function() {
+    const btnInformatique = document.getElementById('btn-informatique');
+    const btnGestion = document.getElementById('btn-gestion');
+    const expInformatique = document.getElementById('experiences-informatique');
+    const expGestion = document.getElementById('experiences-gestion');
+
+    btnInformatique.addEventListener('click', function() {
+        expInformatique.style.display = 'block';
+        expGestion.style.display = 'none';
+        btnInformatique.classList.add('active');
+        btnGestion.classList.remove('active');
+    });
+
+    btnGestion.addEventListener('click', function() {
+        expInformatique.style.display = 'none';
+        expGestion.style.display = 'block';
+        btnInformatique.classList.remove('active');
+        btnGestion.classList.add('active');
+    });
+});
 
 window.addEventListener('DOMContentLoaded', event => {
 
