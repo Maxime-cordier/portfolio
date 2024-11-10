@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const expGestion = document.getElementById('experiences-gestion');
 
     const btnFiti = document.getElementById('fitiCard');
+    const btnOrange = document.getElementById('orangeCard');
 
     btnInformatique.addEventListener('click', function() {
         expInformatique.style.display = 'block';
@@ -30,6 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     btnFiti.addEventListener('click', function() {
         window.location.href = 'fiti.html';
+    });
+    btnOrange.addEventListener('click', function() {
+        window.location.href = 'orange.html';
     });
 
 });

@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Maxime Cordier</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/img/logo.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -84,8 +84,14 @@
                     
                     <div class="row gx-4 mb-5 mb-lg-0 justify-content-center">
                         <!-- Expérience 1 -->
-                         <div class="col-lg-6 mb-3 mb-lg-0 order-lg-first mt-4">
-                            <div class="bg-black text-center h-100 project">
+                         <div class="col-lg-6 mb-3 mb-lg-0 order-lg-first mt-4" id="orangeCard">
+                            <div class="bg-black text-center h-100"
+                                    style="cursor: pointer;
+                                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                                    transition: all 0.3s ease-in-out;"
+                            onmouseover="this.style.transform='scale(0.98)'; this.style.boxShadow='0 15px 30px rgba(0, 0, 0, 0.2)'"
+                            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 15px rgba(0, 0, 0, 0.1)'">
+                    
                                 <div class="d-flex h-100">
                                     <div class="project-text w-100 my-auto text-center text-lg-left">
                                         <h4 class="text-white">Apprenti ingénieur informatique</h4>
@@ -114,18 +120,7 @@
                                         <p class="mb-0 text-white-50">Projet scolaire</p>
                                         <p class="mb-0 text-white-50">Création d'une application mobile pour les adeptes de musculation (gestion de seances de sport et de nutrition). Développée en React Native. La gestion de ce projet c'est déroulée en méthode agile.</p>
                                     </div>
-                                    <div class="project-text w-100 my-auto text-center text-lg-right" id="fiti-icon" style="display: none; opacity: 0; transition: opacity 0.3s ease-in-out;">
-                                        <h4 class="text-white">Projet FITI</h4>
-                                        <div class="d-flex justify-content-center align-items-center mt-3">
-                                            <img src="assets/img/fiti_icon.png" style="max-height: 70px" alt="Logo FITI">
-                                            <img src="assets/img/screen_app.png" style="max-height: 300px" alt="Capture d'écran de l'application">
-                                        </div>
-                                    </div>
                                 </div>
-
-                                
-                                
-                                
                             </div>
                         </div>
                         <!-- Expérience 3 -->
