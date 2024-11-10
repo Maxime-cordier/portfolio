@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const expInformatique = document.getElementById('experiences-informatique');
     const expGestion = document.getElementById('experiences-gestion');
 
+    const btnFiti = document.getElementById('fitiCard');
+
     btnInformatique.addEventListener('click', function() {
         expInformatique.style.display = 'block';
         expGestion.style.display = 'none';
@@ -25,6 +27,11 @@ document.addEventListener('DOMContentLoaded', function() {
         btnInformatique.classList.remove('active');
         btnGestion.classList.add('active');
     });
+
+    btnFiti.addEventListener('click', function() {
+        window.location.href = 'fiti.html';
+    });
+
 });
 
 window.addEventListener('DOMContentLoaded', event => {

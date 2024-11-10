@@ -45,13 +45,14 @@
                     </div>
                 </div>
             </div>
+            
         </header>
         <!-- About-->
         <section class="about-section text-center" id="about">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center align-items-center">
                     <div class="col-lg-4 mb-4 mb-lg-0">
-                        <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="d-flex justify-content-center align-items-center h-100 mb-5">
                             <img src="assets/img/photo_profil.jpg" alt="Photo de profil" class="img-fluid rounded-circle" style="max-width: 65%; filter: grayscale(100%);">
                         </div>
                     </div>
@@ -98,16 +99,33 @@
                         </div>
                         <!-- Expérience 2 -->
                         <div class="col-lg-6 mt-4">
-                            <div class="bg-black text-center h-100 project">
+                            <div class="bg-black text-center h-100" id="fitiCard" 
+                                 style="cursor: pointer;
+                                        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                                        transition: all 0.3s ease-in-out;"
+                                 onmouseover="this.style.transform='scale(0.98)'; this.style.boxShadow='0 15px 30px rgba(0, 0, 0, 0.2)'"
+                                 onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 15px rgba(0, 0, 0, 0.1)'">
+                                
                                 <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <div class="project-text w-100 my-auto text-center text-lg-right" id="fiti-initial" style="opacity: 1; transition: opacity 0.3s ease-in-out;">
                                         <h4 class="text-white">Projet FITI</h4>
                                         <h6 class="text-primary">ENSSAT, Lannion FRANCE</h6>
                                         <h6 class="text-primary">septembre 2023 - février 2024</h6>
                                         <p class="mb-0 text-white-50">Projet scolaire</p>
                                         <p class="mb-0 text-white-50">Création d'une application mobile pour les adeptes de musculation (gestion de seances de sport et de nutrition). Développée en React Native. La gestion de ce projet c'est déroulée en méthode agile.</p>
                                     </div>
+                                    <div class="project-text w-100 my-auto text-center text-lg-right" id="fiti-icon" style="display: none; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                                        <h4 class="text-white">Projet FITI</h4>
+                                        <div class="d-flex justify-content-center align-items-center mt-3">
+                                            <img src="assets/img/fiti_icon.png" style="max-height: 70px" alt="Logo FITI">
+                                            <img src="assets/img/screen_app.png" style="max-height: 300px" alt="Capture d'écran de l'application">
+                                        </div>
+                                    </div>
                                 </div>
+
+                                
+                                
+                                
                             </div>
                         </div>
                         <!-- Expérience 3 -->
@@ -153,7 +171,7 @@
                                         <h6 class="text-primary">IGR-IAE, Rennes FRANCE</h6>
                                         <h6 class="text-primary">septembre 2024 - janvier 2025</h6>
                                         <p class="mb-0 text-white-50">Projet scolaire</p>
-                                        <p class="mb-0 text-white-50">Création d'une stratégie marketing et de communication pour l'ouverture d'un bar à jeux</p>
+                                        <p class="mb-0 text-white-50">Etude de marché et création d'une stratégie marketing pour l'ouverture d'un bar à jeux</p>
                                     </div>
                                 </div>
                             </div>
@@ -191,18 +209,38 @@
                     <div class="col-md-6 mb-3">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h4 class="card-title">Diplôme d'Ingénieur par Apprentissage en Informatique</h4>
-                                <h6 class="card-subtitle mb-2 text-primary">Spécialisation en Intelligence Artificielle</h6>
-                                <p class="card-text">École Nationale Supérieure des Sciences Appliquées et de Technologie (ENSSAT), Lannion, 2021-2024</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3">
+                                        <img src="assets/img/Logo-IGR-IAE.png" alt="Logo IGR-IAE" class="img-fluid" style="max-height: 70px;">
+                                    </div>
+                                    <div>
+                                        <p class="card-text mb-0">Institut de Gestion de Rennes - Institut d'Administration des Entreprises </p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="card-text">2024-2025, Rennes</p>
+                                    <h5 class="card-title">Master 2 Management et Administration des Entreprises</h5>
+                                    <h6 class="card-subtitle mb-2 text-primary">Spécialisation en Entrepreneuriat et Innovation</h6>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h4 class="card-title">Master 2 Management et Administration des Entreprises</h4>
-                                <h6 class="card-subtitle mb-2 text-primary">Spécialisation en Entrepreneuriat et Innovation</h6>
-                                <p class="card-text">Institut de Gestion de Rennes (IGR-IAE), Rennes, 2025</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3">
+                                        <img src="assets/img/Enssat_logoQ_intranet.png" alt="Logo ENSSAT" class="img-fluid" style="max-height: 70px;">
+                                    </div>
+                                    <div>
+                                        <p class="card-text mb-0">École Nationale Supérieure des Sciences Appliquées et de Technologie</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="card-text">2021-2024, Lannion</p>
+                                    <h5 class="card-title">Diplôme d'Ingénieur par Apprentissage en Informatique</h5>
+                                    <h6 class="card-subtitle mb-2 text-primary">Spécialisation en Intelligence Artificielle</h6>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -211,10 +249,21 @@
                     <div class="col-md-6 mb-3">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h4 class="card-title">DUT Réseaux et Télécommunications</h4>
-                                <p class="card-text">Université de Caen, Caen, 2019-2021</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3">
+                                        <img src="assets/img/logo-IUT-grand-ouest-normandie.png" alt="Logo Université de Caen" class="img-fluid" style="max-height: 70px;">
+                                    </div>
+                                    <div>
+                                        <p class="card-text mb-0">Institut Universitaire de Technologie Grand Ouest Normandie</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="card-text">2019-2021, Caen</p>
+                                    <h5 class="card-title">DUT Réseaux et Télécommunications</h5>
+                                </div>
                             </div>
                         </div>
+                        
                     </div>
                     <div class="col-md-6 mb-3"></div>
                 </div>
