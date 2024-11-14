@@ -27,7 +27,7 @@
         <section class="about-section text-center" style="padding-top: 10rem;">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-10">
                         <h2 class="text-white mb-4">Apprenti Ingénieur Informatique</h2>
                         <div class="text-white-50">
                             <img src="assets/img/orange.png" alt="Logo orange" class="img-fluid mb-4" style="max-height: 150px;">
@@ -37,16 +37,40 @@
                                 <h4 class="text-white mb-3">Description du poste</h4>
                                 <p>J'ai travaillé durant 3 ans chez Orange en tant qu'apprenti Ingénieur Informatique. Je me suis principalement penché sur des problématiques liées au service de téléphonie mobile de l'opérateur.</p>
                                 
-                                <h4 class="text-white mb-3 mt-5">Amélioration de la qualité audio (QoS)</h4>
-                                <p>Orange réalise plusieurs fois par ans des campagnes de mesures sur la qualité audio de son service de téléphonie mobile. Lors de ces test, les configurations des antennes radio et des téléphones sont stockés. J'intervenais alors pour analyser ces données dans l'objectif d'indentifier les causes provoquant une mauvaise qualité audio lors de certains appels téléphoniques. En <span class="text-primary"><strong>python</strong></span> et avec un logiciel de <span class="text-primary"><strong>machine learning</strong></span> (Khiops), j'ai créé differents outils de visualisation permettant d'identifier en un coup d'oeil les causes de diminution de la qualité audio ainsi que la suggestion de solutions.</p>
+                                <div class="row align-items-center mt-5">
+                                    <h4 class="text-white mb-3">Amélioration de la qualité audio (QoS)</h4>
+                                    <div class="row">
+                                        <div class="col-lg-3 mx-2">
+                                            <img src="assets/img/posterAnalyseMOS.jpg" alt="Analyse MOS" 
+                                                 class="img-fluid rounded shadow" 
+                                                 style="cursor: pointer;"
+                                                 onclick="openImageModal(this.src)">
+                                        </div>
+                                        <div class="col-lg-8 mt-4">
+                                            <p>Orange réalise plusieurs fois par ans des campagnes de mesures sur la qualité audio de son service de téléphonie mobile. Lors de ces test, les configurations des antennes radio et des téléphones sont stockés. J'intervenais alors pour analyser ces données dans l'objectif d'indentifier les causes provoquant une mauvaise qualité audio lors de certains appels téléphoniques. En <span class="text-primary"><strong>python</strong></span> et avec un logiciel de <span class="text-primary"><strong>machine learning</strong></span> (Khiops), j'ai créé differents outils de visualisation permettant d'identifier en un coup d'oeil les causes de diminution de la qualité audio ainsi que la suggestion de solutions.</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 
-                                
-                                <h4 class="text-white mb-3 mt-5">Codage Audio Neuronal</h4>
-                                <p class="mb-5">
-                                    J'ai réalisé une projet de fin d'études sur le codage audio neuronal. 
-                                    Dans le service de téléphonie mobile nous retrouvons des codecs audio qui permettent de compresser les données audio pour les envoyer plus rapidement et limiter la quantité de données échangées.
-                                    En 2024, les codecs audio traditionnels (AMR, AMR-WB, EVS) sont majoritairement utilisés mais de nombreuse recherches sont réalisées pour créer des codecs audio neuronaux. Durant 6 mois, j'ai analysé et travaillé sur l'optimisation de codecs neuronaux existant (AudioDec de Meta et DAC de Descript). J'ai ainsi pu me familiariser avec de nombreux principes d'IA comme les <span class="text-primary"><strong>réseaux de neurones</strong></span>, les <span class="text-primary"><strong>auto-encodeurs</strong></span>, les <span class="text-primary"><strong>GANs</strong></span>, les <span class="text-primary"><strong>VQ-VAEs</strong></span>, les <span class="text-primary"><strong>espaces latents</strong></span>, etc.
-                                </p>
+                                <div class="row align-items-center mt-5"></div>
+                                    <h4 class="text-white mb-3">Codage Audio Neuronal</h4>
+                                    <div class="row">
+                                        
+                                        <div class="col-lg-3">
+                                            <img src="assets/img/PosterCompressionAudio.jpg" alt="Compression audio" 
+                                                 class="img-fluid rounded shadow" 
+                                                 style="cursor: pointer;"
+                                                 onclick="openImageModal(this.src)">
+                                        </div>
+                                        <div class="col-lg-8 mt-2">
+                                            <p class="mb-5">
+                                                J'ai réalisé une projet de fin d'études sur le codage audio neuronal. 
+                                                Dans le service de téléphonie mobile nous retrouvons des codecs audio qui permettent de compresser les données audio pour les envoyer plus rapidement et limiter la quantité de données échangées.
+                                                En 2024, les codecs audio traditionnels (AMR, AMR-WB, EVS) sont majoritairement utilisés mais de nombreuse recherches sont réalisées pour créer des codecs audio neuronaux. Durant 6 mois, j'ai analysé et travaillé sur l'optimisation de codecs neuronaux existant (AudioDec de Meta et DAC de Descript). J'ai ainsi pu me familiariser avec de nombreux principes d'IA comme les <span class="text-primary"><strong>réseaux de neurones</strong></span>, les <span class="text-primary"><strong>auto-encodeurs</strong></span>, les <span class="text-primary"><strong>GANs</strong></span>, les <span class="text-primary"><strong>VQ-VAEs</strong></span>, les <span class="text-primary"><strong>espaces latents</strong></span>, etc.
+                                            </p>                                        
+                                        </div>
+                                    </div>
+                                </div>
                                 
                                 
                                 
@@ -66,10 +90,38 @@
                 Hébergé chez GitHub
             </div>
         </footer>
+
+        <!-- Ajoutez cette modal à la fin de votre body, juste avant les scripts -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img id="modalImage" src="" class="img-fluid" alt="Image agrandie">
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <!-- Modal (à ajouter à la fin du body, avant les scripts) -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="assets/img/posterAnalyseMOS.jpg" class="img-fluid" alt="Analyse MOS">
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html> 

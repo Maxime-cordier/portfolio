@@ -6,6 +6,13 @@
 //
 // Scripts
 // 
+
+function openImageModal(imgSrc) {
+    document.getElementById('modalImage').src = imgSrc;
+    var myModal = new bootstrap.Modal(document.getElementById('imageModal'));
+    myModal.show();
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const btnInformatique = document.getElementById('btn-informatique');
     const btnGestion = document.getElementById('btn-gestion');
@@ -83,3 +90,4 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
