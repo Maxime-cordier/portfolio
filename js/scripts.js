@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const btnFiti = document.getElementById('fitiCard');
     const btnOrange = document.getElementById('orangeCard');
+    const btnEurocontrol = document.getElementById('eurocontrolCard');
 
     btnInformatique.addEventListener('click', function() {
         expInformatique.style.display = 'block';
@@ -41,6 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     btnOrange.addEventListener('click', function() {
         window.location.href = 'orange.html';
+    });
+    btnEurocontrol.addEventListener('click', function() {
+        window.location.href = 'eurocontrol.html';
     });
 
 });
