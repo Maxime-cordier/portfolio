@@ -11,6 +11,18 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+
+.experience-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
+
+.experience-content.open {
+  max-height: 1000px; /* Ajuste selon ton contenu */
+}
+
+
  img[data-bs-toggle="modal"] {
   transition: transform 0.3s ease-in-out;
 }

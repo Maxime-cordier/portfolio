@@ -13,41 +13,23 @@ function openImageModal(imgSrc) {
     myModal.show();
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const btnInformatique = document.getElementById('btn-informatique');
-    const btnGestion = document.getElementById('btn-gestion');
-    const expInformatique = document.getElementById('experiences-informatique');
-    const expGestion = document.getElementById('experiences-gestion');
+function toggleSection(sectionId) {
+    var section = document.getElementById(sectionId);
 
-    const btnFiti = document.getElementById('fitiCard');
-    const btnOrange = document.getElementById('orangeCard');
-    const btnEurocontrol = document.getElementById('eurocontrolCard');
+    var section = document.getElementById(sectionId);
+    var icon = section.previousElementSibling.querySelector("svg");
 
-    btnInformatique.addEventListener('click', function() {
-        expInformatique.style.display = 'block';
-        expGestion.style.display = 'none';
-        btnInformatique.classList.add('active');
-        btnGestion.classList.remove('active');
-    });
+    if (section.classList.contains("open")) {
+        section.classList.remove("open");
+        icon.classList.remove("fa-chevron-down");
+        icon.classList.add("fa-chevron-up");
+    } else {
+        section.classList.add("open");
+        icon.classList.remove("fa-chevron-up");
+        icon.classList.add("fa-chevron-down");
+    }
+}
 
-    btnGestion.addEventListener('click', function() {
-        expInformatique.style.display = 'none';
-        expGestion.style.display = 'block';
-        btnInformatique.classList.remove('active');
-        btnGestion.classList.add('active');
-    });
-
-    btnFiti.addEventListener('click', function() {
-        window.location.href = 'fiti.html';
-    });
-    btnOrange.addEventListener('click', function() {
-        window.location.href = 'orange.html';
-    });
-    btnEurocontrol.addEventListener('click', function() {
-        window.location.href = 'eurocontrol.html';
-    });
-
-});
 
 window.addEventListener('DOMContentLoaded', event => {
 

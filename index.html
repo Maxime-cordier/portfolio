@@ -66,134 +66,189 @@
                 </div>
             </div>
         </section>
-        <!-- Projects-->
+        <!-- Section Expériences -->
         <section class="projects-section bg-light" id="projects">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center mb-5">
                         <h2 class="text-black mb-4">Mes Expériences</h2>
-                        <div class="btn-group" role="group" aria-label="Catégories d'expériences">
-                            <button type="button" class="btn btn-primary active" id="btn-informatique">Informatique</button>
-                            <button type="button" class="btn btn-primary" id="btn-gestion">Gestion de projet</button>
-                        </div>
                     </div>
                 </div>
-                
+
                 <!-- Expériences Informatique -->
-                <div id="experiences-informatique">
-                    
-                    <div class="row gx-4 mb-5 mb-lg-0 justify-content-center">
-                        <!-- Expérience 1 -->
-                         <div class="col-lg-6 mb-3 mb-lg-0 order-lg-first mt-4" id="orangeCard">
-                            <div class="bg-black text-center h-100"
-                                    style="cursor: pointer;
-                                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-                                    transition: all 0.3s ease-in-out;"
-                            onmouseover="this.style.transform='scale(0.98)'; this.style.boxShadow='0 15px 30px rgba(0, 0, 0, 0.2)'"
-                            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 15px rgba(0, 0, 0, 0.1)'">
-                    
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-left">
-                                        <h4 class="text-white">Apprenti ingénieur informatique</h4>
-                                        <h6 class="text-primary">Orange Innovation, Lannion FRANCE</h6>
-                                        <h6 class="text-primary">2021-2024</h6>
-                                        <p class="mb-0 text-white-50">Projet de fin d'études : Recherches sur l'optimisation de modèles pour la compression audio neuronale</p>
-                                        <p class="mb-0 text-white-50">Autres missions : Analyse et amélioration de la qualité du service (QoS) de téléphonie mobile</p>
+                <div class="experience-section bg-white border border-3 rounded p-4 border-primary">
+                    <h3 class="toggle-title text-primary mb-4" onclick="toggleSection('experiences-informatique')">
+                        Expériences en Informatique <i class="fas fa-chevron-down"></i>
+                    </h3>
+                    <div id="experiences-informatique" class="experience-content open">
+                        <div class="">
+                            <!-- Expérience 1 -->
+                            <div class="mb-3">
+                                <div class="bg-black rounded">
+                                    <div>
+                                        <div class="p-4 d-flex justify-content-between align-items-center">
+                                            <div class="m-2"> 
+                                                <h4 class="text-white">Ingénieur QoS en téléphonie mobile et IA générative</h4>
+                                                <h6 class="text-primary">Orange Innovation, Lannion (France), 2021-2024</h6>
+                                                <p class="mb-0 text-white-50">Contrat d'apprentissage</p>
+                                                <p class="mb-0 text-white-50">Projet de fin d'études : Optimisation de modèles pour la compression audio neuronale</p>
+                                                <p class="mb-0 text-white-50">Autres missions : Analyse et amélioration de la qualité du service (QoS) de téléphonie mobile</p>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <button class="btn btn-primary" style="white-space: nowrap;" onclick="window.location.href='orange.html'">Voir plus</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Expérience 2 -->
-                        <div class="col-lg-6 mt-4" id="fitiCard">
-                            <div class="bg-black text-center h-100" 
-                                 style="cursor: pointer;
-                                        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-                                        transition: all 0.3s ease-in-out;"
-                                 onmouseover="this.style.transform='scale(0.98)'; this.style.boxShadow='0 15px 30px rgba(0, 0, 0, 0.2)'"
-                                 onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 15px rgba(0, 0, 0, 0.1)'">
-                                
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-right" id="fiti-initial" style="opacity: 1; transition: opacity 0.3s ease-in-out;">
-                                        <h4 class="text-white">Projet FITI</h4>
-                                        <h6 class="text-primary">ENSSAT, Lannion FRANCE</h6>
-                                        <h6 class="text-primary">septembre 2023 - février 2024</h6>
-                                        <p class="mb-0 text-white-50">Projet scolaire</p>
-                                        <p class="mb-0 text-white-50">Création d'une application mobile pour les adeptes de musculation (gestion de seances de sport et de nutrition). Développée en React Native. La gestion de ce projet c'est déroulée en méthode agile.</p>
+                            <!-- Expérience 2 -->
+                            <div class="mb-3">
+                                <div class="bg-black rounded">
+                                    <div>
+                                        <div class="p-4 d-flex justify-content-between align-items-center">
+                                            <div class="m-2"> 
+                                                <h4 class="text-white">Data scientist</h4>
+                                                <h6 class="text-primary">Eurocontrol, Bruxelles (Belgique), juin-août 2023</h6>
+                                                <p class="mb-0 text-white-50">Stage</p>
+                                                <p class="mb-0 text-white-50"> Initialisation d'un projet de centralisation de la connaissance entreprise via un chatbot spécialisé. Utilisation d'une archtecture RAG (Retrieval Augmented Generation).</p>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <button class="btn btn-primary" style="white-space: nowrap;" onclick="window.location.href='eurocontrol.html'">Voir plus</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Expérience 3 -->
-                        <div class="col-lg-6 mt-4" id="eurocontrolCard">
-                            <div class="bg-black text-center h-100" 
-                                 style="cursor: pointer;
-                                        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-                                        transition: all 0.3s ease-in-out;"
-                                 onmouseover="this.style.transform='scale(0.98)'; this.style.boxShadow='0 15px 30px rgba(0, 0, 0, 0.2)'"
-                                 onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 15px rgba(0, 0, 0, 0.1)'">
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-right">
-                                        <h4 class="text-white">Stagiaire TALP</h4>
-                                        <h6 class="text-primary">EUROCONTROL, Bruxelles BELGIQUE</h6>
-                                        <h6 class="text-primary">juin-août 2023</h6>
-                                        <p class="mb-0 text-white-50">Initialisation d'un projet de centralisation de la connaissance entreprise via un chatbot spécialisé. Utilisation d'une archtecture RAG (Retrieval Augmented Generation)</p>
+                            <!-- Expérience 3 -->
+                            <div class="mb-3">
+                                <div class="bg-black rounded">
+                                    <div>
+                                        <div class="p-4 d-flex justify-content-between align-items-center">
+                                            <div class="m-2"> 
+                                                <h4 class="text-white">Administrateur réseaux</h4>
+                                                <h6 class="text-primary">Mairie d'Ifs, Ifs (France), avril-juin 2021</h6>
+                                                <p class="mb-0 text-white-50">Stage</p>
+                                                <p class="mb-0 text-white-50">Résolution d'un problème de téléphonie fixe d'entreprise. Configuration de VLANs pour le service de téléphonie fixe interne.</p>
+                                            </div>
+                                            <div class="d-flex align-items-center"></div>
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Expérience 4 -->
-                        <div class="col-lg-6 mt-4">
-                            <div class="bg-black text-center h-100">
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-right">
-                                        <h4 class="text-white">Stagiaire administrateur réseaux</h4>
-                                        <h6 class="text-primary">Mairie d'Ifs, Ifs FRANCE</h6>
-                                        <h6 class="text-primary">avril-juin 2021</h6>
-                                        <p class="mb-0 text-white-50">Résolution d'un problème de téléphonie fixe d'entreprise. Configuration de VLANs pour le service de téléphonie fixe interne</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-                
-                <!-- Expériences Gestion de projet (initialement caché) -->
-                <div id="experiences-gestion" style="display: none;">
-                    <div class="row gx-4 mb-5 mb-lg-0 justify-content-center">
-                        <!-- Expérience 1 -->
-                         <div class="col-lg-6 mb-3 mb-lg-0 order-lg-first mt-4">
-                            <div class="bg-black text-center h-100 ">
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-left">
-                                        <h4 class="text-white">Projet Tavarn Dudi</h4>
-                                        <h6 class="text-primary">IGR-IAE, Rennes FRANCE</h6>
-                                        <h6 class="text-primary">septembre 2024 - janvier 2025</h6>
-                                        <p class="mb-0 text-white-50">Projet scolaire</p>
-                                        <p class="mb-0 text-white-50">Etude de marché et création d'une stratégie marketing pour l'ouverture d'un bar à jeux</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Expérience 2 -->
-                        <div class="col-lg-6 mt-4">
-                            <div class="bg-black text-center h-100">
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-right">
-                                        <h4 class="text-white">Challenge Innovation Orange/Nokia</h4>
-                                        <h6 class="text-primary">ENSSAT, Lannion FRANCE</h6>
-                                        <h6 class="text-primary">2023</h6>
-                                        <p class="mb-0 text-white-50">Projet scolaire</p>
-                                        <p class="mb-0 text-white-50">Elaboration d'un business plan pour un projet fictif innovant (application mobile de géolocalisation éco-responsable)</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <!-- Ajoutez d'autres expériences ici -->
                         </div>
                     </div>
                 </div>
+
+                <!-- Expériences Entrepreneuriat -->
+                <div class="mt-5 experience-section bg-white border border-3 rounded p-4 border-primary">
+                    <h3 class="toggle-title text-primary mb-4" onclick="toggleSection('experiences-entrepreneuriat')">
+                        Expériences en Entrepreneuriat <i class="fas fa-chevron-up"></i>
+                    </h3>
+                    <div id="experiences-entrepreneuriat" class="experience-content">
+                        <div class="">
+                            <!-- Expérience 1 -->
+                            <div class="mb-3">
+                                <div class="bg-black rounded">
+                                    <div>
+                                        <div class="p-4 d-flex justify-content-between align-items-center">
+                                            <div class="m-2"> 
+                                                <h4 class="text-white">Projet Fiti</h4>
+                                                <h6 class="text-primary">Depuis septembre 2023</h6>
+                                                <p class="mb-0 text-white-50">Création d'une application mobile dédiée aux adeptes de musculation.</p>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <button class="btn btn-primary" style="white-space: nowrap;" onclick="window.location.href='fiti.html'">Voir plus</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Ajoutez d'autres expériences ici -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expériences Gestion de Projet -->
+                <div class="mt-5 experience-section bg-white border border-3 rounded p-4 border-primary">
+                    <h3 class="toggle-title text-primary mb-4" onclick="toggleSection('experiences-gestion')">
+                        Expériences en Innovation et Stratégie <i class="fas fa-chevron-up"></i>
+                    </h3>
+                    <div id="experiences-gestion" class="experience-content">
+                        <div class="">
+                            <!-- Expérience 1 -->
+                            <div class="mb-3">
+                                <div class="bg-black rounded">
+                                    <div>
+                                        <div class="p-4 d-flex justify-content-between align-items-center">
+                                            <div class="m-2"> 
+                                                <h4 class="text-white">Seminaire Innovation</h4>
+                                                <h6 class="text-primary">IGR-IAE, ENSSAT, Lannion (France), janvier 2025</h6>
+                                                <p class="mb-0 text-white-50">Idéation pour l'innovation et élaboration d'un business plan pour une application de ventes en ligne de box alimentaires contenant les invendus de petits commerces locaux.</p>
+                                            </div>
+                                            <div class="d-flex align-items-center"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Expérience 2 -->
+                            <div class="mb-3">
+                                <div class="bg-black rounded">
+                                    <div>
+                                        <div class="p-4 d-flex justify-content-between align-items-center">
+                                            <div class="m-2"> 
+                                                <h4 class="text-white">Chargé d'études marketing</h4>
+                                                <h6 class="text-primary">Tavarn Dudi, Combourg (France), septembre 2024 - janvier 2025</h6>
+                                                <p class="mb-0 text-white-50">Projet relié à l'IGR-IAE</p>
+                                                <p class="mb-0 text-white-50">Réalisation d'une étude de marché, d'une stratégie marketing et d'un mix marketing pour l'ouverture d'un bar à jeux dans la ville de Combourg.</p>
+                                            </div>
+                                            <div class="d-flex align-items-center"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Expérience 3 -->
+                            <div class="mb-3">
+                                <div class="bg-black rounded">
+                                    <div>
+                                        <div class="p-4 d-flex justify-content-between align-items-center">
+                                            <div class="m-2"> 
+                                                <h4 class="text-white">Business Analyste</h4>
+                                                <h6 class="text-primary">Rennes Métropôle, Le Poool et Biotech Santé Bretagne, Rennes (France), septembre 2024 - janvier 2025</h6>
+                                                <p class="mb-0 text-white-50">Projet relié à l'IGR-IAE</p>
+                                                <p class="mb-0 text-white-50">Analyse des besoins de collaboration entre 50 acteurs de le e-santé identifiés sur le territoire rennais.</p>
+                                            </div>
+                                            <div class="d-flex align-items-center"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Expérience 4 -->
+                            <div class="mb-3">
+                                <div class="bg-black rounded">
+                                    <div>
+                                        <div class="p-4 d-flex justify-content-between align-items-center">
+                                            <div class="m-2"> 
+                                                <h4 class="text-white">Challenge Innovation Orange/Nokia</h4>
+                                                <h6 class="text-primary">ENSSAT, Lannion (France), 2023</h6>
+                                                <p class="mb-0 text-white-50">Idéation pour l'innovation et élaboration d'un business plan pour une application de géolocalisation éco-responsable.</p>
+                                            </div>
+                                            <div class="d-flex align-items-center"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Ajoutez d'autres expériences ici -->
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
+
+       
         <!-- Formation -->
         <section class="signup-section bg-light" id="formation">
             <div class="container px-4 px-lg-5 pb-5">
