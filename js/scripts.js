@@ -15,8 +15,6 @@ function openImageModal(imgSrc) {
 
 function toggleSection(sectionId) {
     var section = document.getElementById(sectionId);
-
-    var section = document.getElementById(sectionId);
     var icon = section.previousElementSibling.querySelector("svg");
 
     if (section.classList.contains("open")) {
