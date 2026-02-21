@@ -30,12 +30,33 @@
                     <div class="col-lg-8">
                         <h2 class="text-white mb-4">Projet FITI</h2>
                         <div class="text-white-50">
-                            <img src="assets/img/fiti_icon.png" alt="Logo FITI" class="img-fluid mb-4" style="max-height: 150px;">
+                            <img src="assets/img/LOGO-fiti-v2.png" alt="Logo FITI" class="img-fluid mb-4" style="max-height: 150px;">
                             <h3 class="text-primary mb-4">Application mobile de fitness et nutrition</h3>
                             
                             <div class="text-start">
                                 <h4 class="text-white mb-3">Description du projet</h4>
-                                <p>Application mobile développée en React Native pour les adeptes de musculation. Fiti permet la gestion des séances de sport et le suivi nutritionnel. Une version web codée en React permet d'administrer l'application. Fiti a été réalisé dans le cadre d'un projet scolaire à l'Ecole Nationale Supérieure des Sciences Appliquées et de Technologie (ENSSAT) de Lannion. Durant six mois, le suivis du projet s'est déroulé en mode agile avec un jeu de rôle entre professeurs (client) et étudiants. Intégré dans une groupe de 5 étudiants, j'étais principalement chargé de la création et de la gestion de la base de données ainsi que d'une partie du développement fullstack de l'application mobile.</p>
+                                <p>Fiti est une application conçue pour accompagner les sportifs souhaitant intégrer la musculation en complément de leur discipline principale (football, course, etc.). Son objectif est de générer des séances personnalisées adaptées au sport pratiqué afin d’améliorer les performances, structurer l’entraînement et réduire les risques de blessure. Le projet a été réalisé sur deux ans. Durant les six premiers mois, Fiti a emmergé dans un cadre académique à l'ENSSAT, avec une organisation agile simulant un contexte client réel.
+                                Au sein du projet, j’ai contribué aux phases d’idéation, d’étude de marché, de réflexion marketing et de gestion de projet, tout en participant au développement fonctionnel de l’application. 
+                                J’étais principalement responsable du développement de la base de données, de l'API REST et d’une partie du développement frontend. La solution repose sur React Native, TypeScript, Supabase, PostgreSQL et une Clean Architecture avec pattern MVVM, accompagnée d’une interface web d’administration en React. </p>                                
+                                
+                                <h4 class="text-white mb-3 mt-5">Etude de marché</h4>
+                                <p>J'ai pu mener de A à Z une étude de marché qui a permis de comprendre les besoins des potentiels utilisateurs et de se positionner sur le marché très concurrentiel des applications de fitness. Ainsi, nous avons pu réaliser une étude quantitative pour interroger les volontaires sur leurs habitudes sportives (255 réponses). J'ai aussi pu comparer 36 applications de fitness existantes pour identifier les lacunes et opportunités du marché. Cela nous a permis de réaliser notamment un classement de popularité des applications de fitness en se basant sur le nombre de téléchargements, le nombre d'avis ou encore la note moyenne sur les différentes plateformes de téléchargement.</p>                                    
+                                <div class="">
+                                    <img src="assets/img/stat-muscu.png" alt="Statistique" 
+                                    class="img-fluid rounded shadow" 
+                                    style="cursor: pointer;"
+                                    onclick="openImageModal(this.src)">
+                                    <p class="text-white-50 mt-2 text-center"><em>Exemple de résultat relevé par l'étude quantitative sur les habitudes sportives.</em></p>
+                                </div>
+                                <div class="mt-3">
+                                    <img src="assets/img/classement-app.png" alt="Classement" 
+                                    class="img-fluid rounded shadow" 
+                                    style="cursor: pointer;"
+                                    onclick="openImageModal(this.src)">
+                                    <p class="text-white-50 mt-2 text-center"><em>Classement de popularité des 36 applications de fitness analysées</em></p>
+                                </div>
+                                
+
                                 <h4 class="text-white mb-3 mt-5">Technologies utilisées</h4>
                                 <ul>
                                     <li>React </li>
@@ -45,7 +66,8 @@
                                     <li>SupaBase</li>
                                     <li>PostgreSQL</li>
                                     <li>GitHub</li>
-                                    
+                                    <li>Clean Architecture</li>
+                                    <li>MVVM</li>
                                 </ul>
                                 
                                 <h4 class="text-white mb-3 mt-5">Fonctionnalités principales</h4>
@@ -53,10 +75,20 @@
                                     <li>Création et suivi de programmes d'entraînement</li>
                                     <li>Liste de recettes et suivi nutritionnel (Table Ciqual)</li>
                                     <li>Statistiques et progression</li>
-                                    <li>Coach IA (API ChatGPT)</li>
+                                    <li>Coach IA (OpenAI API)</li>
                                 </ul>
                                 
-                                <h4 class="text-white mb-3 mt-5">Visuels de l'application mobile</h4>
+                                <h4 class="text-white mb-3 mt-5">Visuels de l'application mobile v2</h4>
+                                <div class="row mt-4">
+                                    <div class="col-md-6 mb-4">
+                                        <img src="assets/img/fiti-ecran.png" alt="Screenshot 1" class="img-fluid rounded" style="max-height: 600px;">
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <img src="assets/img/fiti+.png" alt="Screenshot 2" class="img-fluid rounded" style="max-height: 600px;">
+                                    </div>
+                                </div>
+
+                                <h4 class="text-white mb-3 mt-5">Visuels de l'application mobile v1</h4>
                                 <div class="row mt-4">
                                     <div class="col-md-6 mb-4">
                                         <img src="assets/img/screen_app.png" alt="Screenshot 1" class="img-fluid rounded" style="max-height: 600px;">
@@ -88,10 +120,25 @@
                 Hébergé chez GitHub
             </div>
         </footer>
+
+        <!-- Ajoutez cette modal à la fin de votre body, juste avant les scripts -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img id="modalImage" src="" class="img-fluid" alt="Image agrandie">
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+       
     </body>
 </html> 
