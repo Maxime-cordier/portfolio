@@ -19,7 +19,20 @@
 }
 
 .experience-content.open {
-  max-height: 1000px; /* Ajuste selon ton contenu */
+  max-height: 3000px; /* Ajuste selon ton contenu */
+}
+
+/* Media queries pour adapter la hauteur sur petits écrans */
+@media (max-width: 768px) {
+  .experience-content.open {
+    max-height: 3000px;
+  }
+}
+
+@media (max-width: 576px) {
+  .experience-content.open {
+    max-height: 3000px;
+  }
 }
 
 
