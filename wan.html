@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Apprenti Ingénieur Informatique - Maxime Cordier</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/logo.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html#projects">Retour au portfolio</a>
+            </div>
+        </nav>
+
+        <!-- Contenu du projet -->
+        <section class="about-section text-center" style="padding-top: 10rem;">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2 class="text-white mb-4">Projet réseau WAN</h2>
+                        <div class="text-white-50">
+                            <h3 class="text-primary mb-4">Conception virtuelle via Packet Tracer et mise en place d'un réseau WAN pour une entreprise fictive.</h3>
+                            
+                            <div class="text-start">
+                                <h4 class="text-white mb-3">Description du projet</h4>
+                                <p>Notre client, une chaîne d'hôtels présente dans les villes Rennes (A), Bénodet (B) et
+Roscoff (C), cherche à moderniser son infrastructure réseau tout en garantissant une
+connectivité stable et sécurisée. Chaque site hôtelier présente des caractéristiques uniques
+en termes de capacité d'accueil, de connectivité Internet et de besoins en gestion interne.
+Pour le site principal, situé à Rennes, comprenant un immeuble de 50 chambres avec des
+bureaux de direction, l'objectif est de fournir un réseau Wi-Fi complet, une connexion ADSL
+redondante pour assurer la continuité des services et d'établir une DMZ pour l'hébergement
+web de l'ensemble de la chaîne.
+Le second site, basé dans la ville balnéaire de Bénodet, se compose de trois bâtiments
+distincts, dont l'un intègre des services de restauration. Une connexion ADSL est disponible,
+et une infrastructure Wi-Fi doit être établie pour relier les bâtiments et assurer une
+connectivité adéquate avec le bâtiment principal d'accueil.
+Enfin, le dernier site, situé dans la ville balnéaire Roscoff, consiste en un seul bâtiment de
+20 chambres, avec une connexion ADSL pour fournir des services de base.
+Afin de mener à bien la modernisation de l’infrastructure réseau, plusieurs objectifs ont été
+mentionnés. Tout d’abord, nous devons concevoir une architecture réseau sécurisée et
+performante pour chaque site, en tenant compte des besoins spécifiques en connectivité,
+gestion interne et accès à Internet.
+Ensuite, il nous faut établir des solutions de sécurité robustes pour garantir que les clients
+des hôtels ne puissent pas accéder au réseau interne de l'entreprise tout en permettant un
+accès Internet via un portail captif.
+De plus, nous devons mettre en place des réseaux Wi-Fi distincts pour les clients et le
+personnel de l'entreprise, avec des restrictions d'accès adéquates.
+Et enfin, il faut assurer une connectivité VPN sécurisée entre les sites distants et le siège
+social pour la gestion des bases de données locales.</p>
+                                <div class="">
+                                    <img src="assets/img/screnn-wan.png" alt="Statistique" 
+                                    class="img-fluid rounded shadow" 
+                                    style="cursor: pointer;"
+                                    onclick="openImageModal(this.src)">
+                                    <p class="text-white-50 mt-2 text-center"><em>Capture d'écran du projet Packet Tracer</em></p>
+                                </div>
+                                
+                             
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50">
+            <div class="container px-4 px-lg-5">
+                Créé avec Bootstrap <br>
+                Par Maxime Cordier <br>
+                Hébergé chez GitHub
+            </div>
+        </footer>
+
+        <!-- Ajoutez cette modal à la fin de votre body, juste avant les scripts -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img id="modalImage" src="" class="img-fluid" alt="Image agrandie">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+        <!-- Modal (à ajouter à la fin du body, avant les scripts) -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="assets/img/posterAnalyseMOS.jpg" class="img-fluid" alt="Analyse MOS">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 
